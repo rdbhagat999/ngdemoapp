@@ -3,11 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --hmr -o",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "filldata": "node ./server/filldata.js > ./server/data.json",
+    "server": "json-server --watch ./server/data.json",
+    "mock-data-server": "npm run filldata && npm run server"
   },
   "private": true,
   "dependencies": {
