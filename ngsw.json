@@ -1,0 +1,83 @@
+{
+  "configVersion": 1,
+  "timestamp": 1610045192373,
+  "index": "C:/Program Files/Git/ngdemoapp/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "C:/Program Files/Git/ngdemoapp/4.6106ab3da35dc49a6950.js",
+        "C:/Program Files/Git/ngdemoapp/favicon.ico",
+        "C:/Program Files/Git/ngdemoapp/index.html",
+        "C:/Program Files/Git/ngdemoapp/main.03c172994b6a6df7790c.js",
+        "C:/Program Files/Git/ngdemoapp/manifest.webmanifest",
+        "C:/Program Files/Git/ngdemoapp/polyfills.34014355fe04c3350d2a.js",
+        "C:/Program Files/Git/ngdemoapp/runtime.e30a617a348f4e38e2d4.js",
+        "C:/Program Files/Git/ngdemoapp/styles.51b61c92df8f96290bee.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "C:/Program Files/Git/ngdemoapp/assets/icons/icon-128x128.png",
+        "C:/Program Files/Git/ngdemoapp/assets/icons/icon-144x144.png",
+        "C:/Program Files/Git/ngdemoapp/assets/icons/icon-152x152.png",
+        "C:/Program Files/Git/ngdemoapp/assets/icons/icon-192x192.png",
+        "C:/Program Files/Git/ngdemoapp/assets/icons/icon-384x384.png",
+        "C:/Program Files/Git/ngdemoapp/assets/icons/icon-512x512.png",
+        "C:/Program Files/Git/ngdemoapp/assets/icons/icon-72x72.png",
+        "C:/Program Files/Git/ngdemoapp/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "C:/Program Files/Git/ngdemoapp/4.6106ab3da35dc49a6950.js": "66ebfb7d1a3bddbb71a0c01bc7af1eb85af4b492",
+    "C:/Program Files/Git/ngdemoapp/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "C:/Program Files/Git/ngdemoapp/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "C:/Program Files/Git/ngdemoapp/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "C:/Program Files/Git/ngdemoapp/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "C:/Program Files/Git/ngdemoapp/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "C:/Program Files/Git/ngdemoapp/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "C:/Program Files/Git/ngdemoapp/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "C:/Program Files/Git/ngdemoapp/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "C:/Program Files/Git/ngdemoapp/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "C:/Program Files/Git/ngdemoapp/index.html": "093323626392f9c9e8ffeab74d6bba03a1c35dba",
+    "C:/Program Files/Git/ngdemoapp/main.03c172994b6a6df7790c.js": "33946cad461287c8ecfac72e1e974bffd500b581",
+    "C:/Program Files/Git/ngdemoapp/manifest.webmanifest": "bba33650309065940e2409018fe450b79f2451cc",
+    "C:/Program Files/Git/ngdemoapp/polyfills.34014355fe04c3350d2a.js": "57522d7082e517494251a7d889202227db2d427c",
+    "C:/Program Files/Git/ngdemoapp/runtime.e30a617a348f4e38e2d4.js": "0b8a529229673c4eb92a9e4c4292bcc76c5c9d46",
+    "C:/Program Files/Git/ngdemoapp/styles.51b61c92df8f96290bee.css": "948f447e0714987844d0b06d31902331b0f7cdbc"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
