@@ -1,0 +1,52 @@
+<input type="text" (keypress)="keyPressNumbers($event)" placeholder="Only Integer Numbers" />
+<br />
+
+<input type="text" (keypress)="keyPressNumbersDecimal($event)" placeholder="Only Numbers with Decimals" />
+<br />
+
+<input type="text" appInputFocus (keypress)="keyPressAlphaNumeric($event)" placeholder="Only AlphaNumeric" />
+<br />
+
+<input type="text" (keypress)="keyPressAlphaNumericWithCharacters($event)" placeholder="Allow numbers, alpahbets, space, underscore" />
+<br />
+
+<form [formGroup]="addUserForm" (ngSubmit)="submitUser()">
+	<!-- Name control -->
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"><span class="required-asterisk">*</span>Name</label>
+        <div class="col-sm-10">
+            <!-- Alerts user when control is interacted or form is submitted about errors-->
+            <input type="text" formControlName="name" class="form-control" placeholder="Enter name"
+                [ngClass]="{ 'is-invalid': (isFormSubmitted && addUserForm.controls.name.errors) || (!addUserForm.controls.name.pristine && addUserForm.controls.name.invalid) }">
+
+            <!-- Validation messages -->
+            <div class="invalid-feedback"
+                *ngIf="(isFormSubmitted && addUserForm.controls.name.errors) || (!addUserForm.controls.name.pristine && addUserForm.controls.name.invalid)">
+                <div *ngIf="addUserForm.controls.name.errors.required">Name is required</div>
+                <div *ngIf="addUserForm.controls.name.errors.pattern">Only Alphabets with space
+                    between 2 to
+                    20
+                    characters</div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Email control -->
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"><span class="required-asterisk">*</span>Email</label>
+        <div class="col-sm-10">
+
+            <input type="text" formControlName="email" class="form-control" placeholder="Enter email"
+                [ngClass]="{ 'is-invalid': (isFormSubmitted && addUserForm.controls.email.errors) || (!addUserForm.controls.email.pristine && addUserForm.controls.email.invalid) }">
+
+            <!-- Validation messages -->
+            <div class="invalid-feedback"
+                *ngIf="(isFormSubmitted && addUserForm.controls.email.errors) || (!addUserForm.controls.email.pristine && addUserForm.controls.email.invalid)">
+                <div *ngIf="addUserForm.controls.email.errors.required">Email is required</div>
+                <div *ngIf="addUserForm.controls.email.errors.pattern">Enter valid email</div>
+
+            </div>
+        </div>
+    </div>
+</form>
