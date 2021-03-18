@@ -12,6 +12,10 @@
           "/manifest.webmanifest",
           "/*.css",
           "/*.js"
+        ],
+        "urls": [
+          "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
+          "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         ]
       }
     },
@@ -24,6 +28,21 @@
           "/assets/**",
           "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
         ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "employees",
+      "urls": [
+        "http://localhost:3000/employees",
+        "https://s3.amazonaws.com/uifaces/faces/twitter/*/*.jpg"
+      ],
+      "cacheConfig": {
+        "maxAge": "9d",
+        "maxSize": 5,
+        "strategy": "freshness",
+        "timeout": "3s"
       }
     }
   ]
