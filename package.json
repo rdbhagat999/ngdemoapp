@@ -1,6 +1,6 @@
 {
   "name": "ngdemoapp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --hmr -o",
@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "filldata": "node ./server/filldata.js > ./server/data.json",
     "server": "json-server --watch ./server/data.json",
-    "mock-data-server": "npm run filldata && npm run server"
+    "mock-data-server": "npm run filldata && npm run server",
+    "git-deploy": "ng deploy --base-href=/ngdemoapp/"
   },
   "private": true,
   "dependencies": {
