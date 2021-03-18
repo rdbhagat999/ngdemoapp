@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1616075989880,
+  "timestamp": 1616076795588,
   "index": "/ngdemoapp/index.html",
   "assetGroups": [
     {
@@ -21,8 +21,10 @@
         "/ngdemoapp/styles.51b61c92df8f96290bee.css"
       ],
       "patterns": [
-        "https:\\/\\/stackpath\\.bootstrapcdn\\.com\\/font-awesome\\/4\\.7\\.0\\/css\\/font-awesome\\.min\\.css",
-        "https:\\/\\/stackpath\\.bootstrapcdn\\.com\\/bootstrap\\/4\\.5\\.2\\/css\\/bootstrap\\.min\\.css"
+        "https:\\/\\/stackpath\\.bootstrapcdn\\.com\\/font-awesome\\/4\\.7\\.0\\/fonts\\/[^/]*\\.woff2\\?v=4\\.7\\.0",
+        "https:\\/\\/stackpath\\.bootstrapcdn\\.com\\/font-awesome\\/4\\.7\\.0\\/css\\/[^/]*\\.css",
+        "https:\\/\\/stackpath\\.bootstrapcdn\\.com\\/bootstrap\\/4\\.5\\.2\\/css\\/[^/]*\\.css",
+        "https:\\/\\/fonts\\.googleapis\\.com\\/css2\\?family=Roboto:wght@400&display=swap"
       ]
     },
     {
