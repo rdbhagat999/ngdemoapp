@@ -5,10 +5,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { environment } from '../environments/environment';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
-import { PdfViewerModule } from 'ng2-pdf-viewer';
-import { QRCodeModule } from 'angular2-qrcode';
-import { ClipboardModule } from 'ngx-clipboard';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -34,10 +30,6 @@ import { LazyImgDirective } from './directives/lazy-img.directive';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    PdfViewerModule,
-    QRCodeModule,
-    ClipboardModule,
-    NgxSkeletonLoaderModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production, registrationStrategy: 'registerImmediately'  })
   ],
