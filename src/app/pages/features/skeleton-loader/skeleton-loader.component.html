@@ -11,7 +11,7 @@
       <li *ngFor="let item of dataList">
         <div class="item-wrap">
           <div class="item-img">
-            <img loading=lazy src="https://picsum.photos/200.webp" />
+            <img loading=lazy src="https://picsum.photos/id/{{item?.id ? item?.id : 10}}/128/128.webp" />
           </div>
           <div class="item-content">
             <label>{{item?.name | titlecase}}</label>
