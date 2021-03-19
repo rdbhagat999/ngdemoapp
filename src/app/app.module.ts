@@ -52,7 +52,7 @@ import { LazyImgDirective } from './directives/lazy-img.directive';
     ClipboardModule,
     NgxSkeletonLoaderModule,
     AppRoutingModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production, registrationStrategy: 'registerImmediately'  })
   ],
   providers: [
     HttpcancelService,

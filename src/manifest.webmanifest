@@ -1,4 +1,6 @@
 {
+  "dir": "ltr",
+  "lang": "en",
   "name": "ngdemoapp",
   "short_name": "ngdemoapp",
   "theme_color": "#1976d2",
@@ -6,6 +8,9 @@
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
+  "orientation": "any",
+  "related_applications": [],
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",

@@ -11,7 +11,7 @@
       <li *ngFor="let item of dataList">
         <div class="item-wrap">
           <div class="item-img">
-            <img [src]="item?.imageUrl" />
+            <img loading=lazy [src]="item?.imageUrl" />
           </div>
           <div class="item-content">
             <label>{{item?.name | titlecase}}</label>
@@ -22,7 +22,7 @@
       </li>
 
     </ng-container>
-    
+
     <ng-template #elseTemplate>
       <!-- Loading Items -->
       <li class="skeleton" *ngFor="let item of generateFake(5)">
@@ -37,7 +37,7 @@
             <div>
               <ngx-skeleton-loader></ngx-skeleton-loader>
             </div>
-            
+
             <p>
               <ngx-skeleton-loader [theme]="{ height: '30px'}"></ngx-skeleton-loader>
             </p>
@@ -50,5 +50,5 @@
     </ng-template>
 
   </ul>
-  
+
 </div>

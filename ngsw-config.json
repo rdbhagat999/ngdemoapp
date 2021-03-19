@@ -14,6 +14,7 @@
           "/*.js"
         ],
         "urls": [
+          "https://cdn.glitch.com/49d34dc6-8fbd-46bb-8221-b99ffd36f1af%2Ftouchicon-180.png?v=1566411949736",
           "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/fonts/*.woff2?v=4.7.0",
           "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/*.css",
           "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/*.css",
@@ -38,13 +39,13 @@
       "name": "employees",
       "urls": [
         "http://localhost:3000/employees",
-        "https://s3.amazonaws.com/uifaces/faces/twitter/*/*.jpg"
+        "https://picsum.photos/200.webp"
       ],
       "cacheConfig": {
-        "maxAge": "9d",
-        "maxSize": 5,
+        "maxAge": "30d",
+        "maxSize": 15,
         "strategy": "freshness",
-        "timeout": "3s"
+        "timeout": "6s"
       }
     }
   ]
