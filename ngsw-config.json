@@ -14,11 +14,11 @@
           "/*.js"
         ],
         "urls": [
-          "https://cdn.glitch.com/49d34dc6-8fbd-46bb-8221-b99ffd36f1af%2Ftouchicon-180.png",
+          "https://fonts.gstatic.com",
+          "https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap",
           "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/fonts/*.woff2?v=4.7.0",
           "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/*.css",
-          "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/*.css",
-          "https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+          "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.*"
         ]
       }
     },
@@ -39,7 +39,7 @@
       "name": "employees",
       "urls": [
         "http://localhost:3000/employees",
-        "https://picsum.photos/200.webp"
+        "https://picsum.photos/id/*/*.webp"
       ],
       "cacheConfig": {
         "maxAge": "30d",
