@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1616174318786,
+  "timestamp": 1616177391634,
   "index": "/ngdemoapp/index.html",
   "assetGroups": [
     {
@@ -11,17 +11,19 @@
         "ignoreVary": true
       },
       "urls": [
-        "/ngdemoapp/4.ddb851f7922d4e03240c.js",
+        "/ngdemoapp/0.914b8c67f3e9213bbccb.worker.js",
+        "/ngdemoapp/4.c06a5e5ba9de8dc44928.js",
+        "/ngdemoapp/5.47e06fa2acba09f91535.js",
         "/ngdemoapp/favicon.ico",
         "/ngdemoapp/index.html",
-        "/ngdemoapp/main.70e21e28f61892f9007a.js",
+        "/ngdemoapp/main.73300133d5dd3216bafa.js",
         "/ngdemoapp/manifest.webmanifest",
         "/ngdemoapp/polyfills.30802cf50310740a9cdd.js",
-        "/ngdemoapp/runtime.cbcf0f29826a5ac1358f.js",
+        "/ngdemoapp/runtime.6a3ebe7dc00443f8ae8a.js",
         "/ngdemoapp/styles.51b61c92df8f96290bee.css"
       ],
       "patterns": [
-        "https:\\/\\/cdn\\.glitch\\.com\\/49d34dc6-8fbd-46bb-8221-b99ffd36f1af%2Ftouchicon-180\\.png\\?v=1566411949736",
+        "https:\\/\\/cdn\\.glitch\\.com\\/49d34dc6-8fbd-46bb-8221-b99ffd36f1af%2Ftouchicon-180\\.png",
         "https:\\/\\/stackpath\\.bootstrapcdn\\.com\\/font-awesome\\/4\\.7\\.0\\/fonts\\/[^/]*\\.woff2\\?v=4\\.7\\.0",
         "https:\\/\\/stackpath\\.bootstrapcdn\\.com\\/font-awesome\\/4\\.7\\.0\\/css\\/[^/]*\\.css",
         "https:\\/\\/stackpath\\.bootstrapcdn\\.com\\/bootstrap\\/4\\.5\\.2\\/css\\/[^/]*\\.css",
@@ -66,7 +68,9 @@
     }
   ],
   "hashTable": {
-    "/ngdemoapp/4.ddb851f7922d4e03240c.js": "d1d83af454ef59530a22f4ae845210205e520b31",
+    "/ngdemoapp/0.914b8c67f3e9213bbccb.worker.js": "f342ddc86a556f76b8e3ed8bbfe44b22b20d92fa",
+    "/ngdemoapp/4.c06a5e5ba9de8dc44928.js": "9730f2cb6ed9232ade235fd067b6b8a02888a0c8",
+    "/ngdemoapp/5.47e06fa2acba09f91535.js": "d073f77b7ec2f272e5fb78ab8460ab420497ef92",
     "/ngdemoapp/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/ngdemoapp/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "/ngdemoapp/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -76,11 +80,11 @@
     "/ngdemoapp/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/ngdemoapp/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/ngdemoapp/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/ngdemoapp/index.html": "38f0a3c93c50a7a902bb71b6cbfecb074d65e9d2",
-    "/ngdemoapp/main.70e21e28f61892f9007a.js": "14254df40eb6cecd4d7cffd0bdf08b9f946dd7b7",
+    "/ngdemoapp/index.html": "1013a262bd75b0b150b8d05a56136e535b5cda45",
+    "/ngdemoapp/main.73300133d5dd3216bafa.js": "9a7f6a5ad892f09dd320fa77d7514cf19edc5bb7",
     "/ngdemoapp/manifest.webmanifest": "784c9bd7e74ee2073b15db041a904c4f6a5a375a",
     "/ngdemoapp/polyfills.30802cf50310740a9cdd.js": "57522d7082e517494251a7d889202227db2d427c",
-    "/ngdemoapp/runtime.cbcf0f29826a5ac1358f.js": "2c114a4c282cb391c1fd3cf583dba91b5940e2c3",
+    "/ngdemoapp/runtime.6a3ebe7dc00443f8ae8a.js": "f677d7910e245f30ee2d577298675aaecbbc57ba",
     "/ngdemoapp/styles.51b61c92df8f96290bee.css": "948f447e0714987844d0b06d31902331b0f7cdbc"
   },
   "navigationUrls": [
