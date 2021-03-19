@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MockDataService } from '../../services/mock-data.service';
-import { Employee } from '../../models/employee';
+import { MockDataService } from '../../../services/mock-data.service';
+import { Employee } from '../../../models/employee';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 

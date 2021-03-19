@@ -16,17 +16,22 @@ export class WebworkerDemoComponent implements OnInit {
 
   runWorker() {
 
-    const startTime = new Date().getTime();
-    
-    const numListWorker = new Worker('../../web-workers/num-list.worker', { 
-      type: 'module' 
-    });
-    numListWorker.onmessage = ({ data }) => {
-      console.log(new Date().getTime() - startTime);
-      console.log('From Web Worker');
-      // console.log('From Web Worker:', data);
-    };
-    numListWorker.postMessage({n: this.n});
+    if (typeof Worker !== 'undefined') {
+
+      const startTime = new Date().getTime();
+
+      const numListWorker = new Worker('./num-list.worker', {
+        type: 'module'
+      });
+      numListWorker.onmessage = ({ data }) => {
+        console.log(new Date().getTime() - startTime);
+        console.log('From numListWorker');
+      };
+      numListWorker.postMessage({n: this.n});
+
+    } else {
+      console.log('Web workers are not supported in this environment.');
+    }
   }
 
   runThread() {

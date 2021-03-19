@@ -14,7 +14,7 @@
           "/*.js"
         ],
         "urls": [
-          "https://cdn.glitch.com/49d34dc6-8fbd-46bb-8221-b99ffd36f1af%2Ftouchicon-180.png?v=1566411949736",
+          "https://cdn.glitch.com/49d34dc6-8fbd-46bb-8221-b99ffd36f1af%2Ftouchicon-180.png",
           "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/fonts/*.woff2?v=4.7.0",
           "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/*.css",
           "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/*.css",

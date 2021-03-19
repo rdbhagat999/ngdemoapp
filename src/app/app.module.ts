@@ -13,14 +13,7 @@ import { ClipboardModule } from 'ngx-clipboard';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-
 import { WebworkerDemoComponent } from './pages/webworker-demo/webworker-demo.component';
-import { InputRegexValidationsComponent } from './pages/input-regex-validations/input-regex-validations.component';
-import { SkeletonLoaderComponent } from './pages/skeleton-loader/skeleton-loader.component';
-import { SweetAlertComponent } from './pages/sweet-alert/sweet-alert.component';
-import { ViewPdfComponent } from './pages/view-pdf/view-pdf.component';
-import { QrcodeComponent } from './pages/qrcode/qrcode.component';
-import { ClipboardComponent } from './pages/clipboard/clipboard.component';
 import { InputFocusDirective } from './directives/input-focus.directive';
 
 import { AuthGuard } from './guards/auth.guard';
@@ -32,12 +25,6 @@ import { LazyImgDirective } from './directives/lazy-img.directive';
   declarations: [
     AppComponent,
     WebworkerDemoComponent,
-    InputRegexValidationsComponent,
-    SkeletonLoaderComponent,
-    SweetAlertComponent,
-    ViewPdfComponent,
-    QrcodeComponent,
-    ClipboardComponent,
     InputFocusDirective,
     LazyImgDirective,
   ],
