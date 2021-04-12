@@ -9,10 +9,9 @@ import { Component } from '@angular/core';
     trigger('openClose', [
       state('collapsed', style({
         height: '0px',
-        opacity: 0.5,
+        opacity: 0,
       })),
       state('expanded', style({
-        // height: '400px',
         opacity: 1,
       })),
       transition('collapsed => expanded', [
