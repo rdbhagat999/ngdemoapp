@@ -8,17 +8,19 @@ import { Component } from '@angular/core';
   animations: [
     trigger('openClose', [
       state('collapsed', style({
+        // display: 'none',
+        opacity: 1,
         height: '0px',
-        opacity: 0,
       })),
       state('expanded', style({
         opacity: 1,
+        // display: 'flex',
       })),
       transition('collapsed => expanded', [
-        animate('500ms ease-in-out')
+        animate('200ms ease-in')
       ]),
       transition('expanded => collapsed', [
-        animate('500ms ease-in')
+        animate('200ms ease-in')
       ]),
     ]),
   ],
@@ -27,7 +29,7 @@ export class AppComponent {
 
   isCollapsed = true;
 
-  ngOnInit() {
+  constructor() {
     this.isCollapsed = true;
   }
 
