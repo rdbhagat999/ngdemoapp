@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1618241556141,
+  "timestamp": 1618244005400,
   "index": "/ngdemoapp/index.html",
   "assetGroups": [
     {
@@ -85,7 +85,7 @@
     "/ngdemoapp/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "/ngdemoapp/index.html": "d04652bca44b7bafef8534716acef179c4401bb8",
     "/ngdemoapp/main.ba51045d86b67c71d725.js": "c33993c68572b3945b1b952ca1e324a02833f9bc",
-    "/ngdemoapp/manifest.webmanifest": "784c9bd7e74ee2073b15db041a904c4f6a5a375a",
+    "/ngdemoapp/manifest.webmanifest": "67d784f7b6c3c44f7815489d67d18275f55f328c",
     "/ngdemoapp/polyfills.316f81663be7392c65f5.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
     "/ngdemoapp/runtime.b62443a55006d210b368.js": "ab6b32f078cc0d0818311c85ac5729c5ab7f9152",
     "/ngdemoapp/styles.51b61c92df8f96290bee.css": "948f447e0714987844d0b06d31902331b0f7cdbc"
