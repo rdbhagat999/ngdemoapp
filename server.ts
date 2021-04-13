@@ -12,6 +12,7 @@ import * as cors from 'cors';
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
+  server.use(cors())
   const distFolder = join(process.cwd(), 'dist/ngdemoapp/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
