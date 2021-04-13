@@ -16,9 +16,9 @@
     <div class="col-sm-6 col-lg-4 col-xl-3" *ngFor="let randomUser of (randomUsers$ | async)">
 
       <div class="card mb-3">
-        <img src="assets/images/sample.png" class="card-img-top" [alt]="randomUser?.username">
+        <img src="assets/images/sample.png" width="500px" height="500px" class="card-img-top" [alt]="randomUser?.username">
         <div class="card-body">
-          <h5 class="card-title">{{ randomUser?.name | titlecase }}</h5>
+          <h3 class="card-title">{{ randomUser?.name | titlecase 3}</h3>
           <p class="card-text">
             {{ randomUser?.address?.city }} {{ randomUser?.address?.zipcode }}
           </p>
@@ -41,9 +41,9 @@
     <div class="col-sm-6 col-lg-4 col-xl-3" *ngFor="let post of (posts$ | async)">
 
       <div class="card mb-3">
-        <img src="https://via.placeholder.com/150/?text=Post" class="card-img-top" [alt]="post?.title">
+        <img src="https://via.placeholder.com/500/?text=Post" width="500px" height="500px" class="card-img-top" [alt]="post?.title">
         <div class="card-body">
-          <h5 class="card-title">{{ post?.title | titlecase }}</h5>
+          <h3 class="card-title">{{ post?.title | titlecase }}</h3>
           <p class="card-text">
             {{ post?.body }}
           </p>
