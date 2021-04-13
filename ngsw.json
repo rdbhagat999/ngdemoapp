@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1618251899263,
+  "timestamp": 1618313998356,
   "index": "/ngdemoapp/index.html",
   "assetGroups": [
     {
@@ -11,16 +11,22 @@
         "ignoreVary": true
       },
       "urls": [
-        "/ngdemoapp/0.914b8c67f3e9213bbccb.worker.js",
-        "/ngdemoapp/4.c6d686c1c3fd2c71d88e.js",
-        "/ngdemoapp/5.76164a229f38b64af3cb.js",
+        "/ngdemoapp/0-es2015.74952165d06446209c69.worker.js",
+        "/ngdemoapp/0-es5.74952165d06446209c69.worker.js",
+        "/ngdemoapp/5-es2015.c55caea2cd48ce0acc24.js",
+        "/ngdemoapp/5-es5.c55caea2cd48ce0acc24.js",
+        "/ngdemoapp/6-es2015.db8806e507299d81ed13.js",
+        "/ngdemoapp/6-es5.db8806e507299d81ed13.js",
         "/ngdemoapp/favicon.ico",
         "/ngdemoapp/index.html",
-        "/ngdemoapp/main.078b29e8c0baed0f11ce.js",
+        "/ngdemoapp/main-es2015.4f29309e93878f130d7f.js",
+        "/ngdemoapp/main-es5.4f29309e93878f130d7f.js",
         "/ngdemoapp/manifest.webmanifest",
-        "/ngdemoapp/polyfills.316f81663be7392c65f5.js",
-        "/ngdemoapp/runtime.b62443a55006d210b368.js",
-        "/ngdemoapp/styles.7fa45d209278006c1628.css"
+        "/ngdemoapp/polyfills-es2015.fc172460e3792d8fa8da.js",
+        "/ngdemoapp/polyfills-es5.1efc2d54303a3f852823.js",
+        "/ngdemoapp/runtime-es2015.01c54389112b82d48ad8.js",
+        "/ngdemoapp/runtime-es5.01c54389112b82d48ad8.js",
+        "/ngdemoapp/styles.9076f024356a17b61ee2.css"
       ],
       "patterns": [
         "https:\\/\\/fonts\\.gstatic\\.com",
@@ -70,9 +76,12 @@
     }
   ],
   "hashTable": {
-    "/ngdemoapp/0.914b8c67f3e9213bbccb.worker.js": "f342ddc86a556f76b8e3ed8bbfe44b22b20d92fa",
-    "/ngdemoapp/4.c6d686c1c3fd2c71d88e.js": "4067f4678cc1b4afe8b7aa29f4bf2aa365ecdfae",
-    "/ngdemoapp/5.76164a229f38b64af3cb.js": "a4d01a51baba9f102ef74c6fbb62eca77d080ac6",
+    "/ngdemoapp/0-es2015.74952165d06446209c69.worker.js": "f342ddc86a556f76b8e3ed8bbfe44b22b20d92fa",
+    "/ngdemoapp/0-es5.74952165d06446209c69.worker.js": "58647570fc25e6da1cf0cbde8eaed91171d3456a",
+    "/ngdemoapp/5-es2015.c55caea2cd48ce0acc24.js": "1d991c24053012b423a2d013642f50ade0c1bca6",
+    "/ngdemoapp/5-es5.c55caea2cd48ce0acc24.js": "59cfc39e09da2be7aff24e98660219bff84355d4",
+    "/ngdemoapp/6-es2015.db8806e507299d81ed13.js": "e419a6d0f53ae8ce89447f6bcc4fd79cbc0b2b3a",
+    "/ngdemoapp/6-es5.db8806e507299d81ed13.js": "baffc612a491c471981808773f54874a06fdf953",
     "/ngdemoapp/assets/icons/apple_touchicon-180.png": "83ae5ee606b6cc97a2906a268ed96ad527530599",
     "/ngdemoapp/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/ngdemoapp/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
@@ -83,12 +92,15 @@
     "/ngdemoapp/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/ngdemoapp/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/ngdemoapp/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/ngdemoapp/index.html": "9e0f69bbf5218d42d17279a080a2f1160a5f23f6",
-    "/ngdemoapp/main.078b29e8c0baed0f11ce.js": "836e0c0bf7536eed6f9bc99cf53f1614678eaef6",
+    "/ngdemoapp/index.html": "bc7b70c3301085085fd80ed3d2efe551753a3543",
+    "/ngdemoapp/main-es2015.4f29309e93878f130d7f.js": "f92413c19a13dbe787c096df450529a416313741",
+    "/ngdemoapp/main-es5.4f29309e93878f130d7f.js": "35ba3cf52336bc297a38a6c4b21b6c6a7a0c17af",
     "/ngdemoapp/manifest.webmanifest": "67d784f7b6c3c44f7815489d67d18275f55f328c",
-    "/ngdemoapp/polyfills.316f81663be7392c65f5.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
-    "/ngdemoapp/runtime.b62443a55006d210b368.js": "ab6b32f078cc0d0818311c85ac5729c5ab7f9152",
-    "/ngdemoapp/styles.7fa45d209278006c1628.css": "c77dc5f94005dfdf0f406feea8ce4b2037e7c7d8"
+    "/ngdemoapp/polyfills-es2015.fc172460e3792d8fa8da.js": "65c537467564ee0ba776b629f71ed3413413a7cb",
+    "/ngdemoapp/polyfills-es5.1efc2d54303a3f852823.js": "f1fb001939e2a054d62f941e8281f6051a71bf04",
+    "/ngdemoapp/runtime-es2015.01c54389112b82d48ad8.js": "7b8a976daff62702d5f56707ed98f67d5ebcb9ba",
+    "/ngdemoapp/runtime-es5.01c54389112b82d48ad8.js": "8a9956a1b95980db16a530c2cbf0853cc9f76f43",
+    "/ngdemoapp/styles.9076f024356a17b61ee2.css": "4fde3148b1b7bc6f97274047cacabb2219d38132"
   },
   "navigationUrls": [
     {
