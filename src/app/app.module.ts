@@ -25,7 +25,7 @@ import { LazyImgDirective } from './directives/lazy-img.directive';
     LazyImgDirective,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
