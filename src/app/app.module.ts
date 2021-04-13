@@ -16,6 +16,8 @@ import { AuthGuard } from './guards/auth.guard';
 import { HttpcancelService } from './services/httpcancel.service';
 import { ManageHttpInterceptor } from './interceptors/manage-http.interceptor';
 import { LazyImgDirective } from './directives/lazy-img.directive';
+import { AppShellRenderDirective } from './directives/app-shell-render.directive';
+import { AppShellNoRenderDirective } from './directives/app-shell-no-render.directive';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { LazyImgDirective } from './directives/lazy-img.directive';
     WebworkerDemoComponent,
     InputFocusDirective,
     LazyImgDirective,
+    AppShellRenderDirective,
+    AppShellNoRenderDirective,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
