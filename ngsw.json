@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1618331533465,
+  "timestamp": 1618331912885,
   "index": "/ngdemoapp/index.html",
   "assetGroups": [
     {
@@ -19,8 +19,8 @@
         "/ngdemoapp/6-es5.82563b4cf1c738f37276.js",
         "/ngdemoapp/favicon.ico",
         "/ngdemoapp/index.html",
-        "/ngdemoapp/main-es2015.8a5cc4eb9b7b6667d9ba.js",
-        "/ngdemoapp/main-es5.8a5cc4eb9b7b6667d9ba.js",
+        "/ngdemoapp/main-es2015.41b67b226c099d4886a8.js",
+        "/ngdemoapp/main-es5.41b67b226c099d4886a8.js",
         "/ngdemoapp/manifest.webmanifest",
         "/ngdemoapp/polyfills-es2015.fc172460e3792d8fa8da.js",
         "/ngdemoapp/polyfills-es5.1efc2d54303a3f852823.js",
@@ -56,7 +56,8 @@
         "/ngdemoapp/assets/icons/icon-384x384.png",
         "/ngdemoapp/assets/icons/icon-512x512.png",
         "/ngdemoapp/assets/icons/icon-72x72.png",
-        "/ngdemoapp/assets/icons/icon-96x96.png"
+        "/ngdemoapp/assets/icons/icon-96x96.png",
+        "/ngdemoapp/assets/images/sample.png"
       ],
       "patterns": []
     }
@@ -94,10 +95,11 @@
     "/ngdemoapp/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "/ngdemoapp/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/ngdemoapp/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/ngdemoapp/assets/images/sample.png": "44f2a1985c4e80a1b8ada25a6732f9e96f090535",
     "/ngdemoapp/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/ngdemoapp/index.html": "34e264c593da4db3bc93138b06eaf384335be098",
-    "/ngdemoapp/main-es2015.8a5cc4eb9b7b6667d9ba.js": "ba075d83628c7706bc8386c944dac03ada5371ab",
-    "/ngdemoapp/main-es5.8a5cc4eb9b7b6667d9ba.js": "a07338326e44fd1ba642768b1d6ba2084e7ce407",
+    "/ngdemoapp/index.html": "8cf0d1c7f87980c1fd4054b4a140698ef1790eda",
+    "/ngdemoapp/main-es2015.41b67b226c099d4886a8.js": "e05a8a10ba2d0c1b103e0b03297981531b6c242b",
+    "/ngdemoapp/main-es5.41b67b226c099d4886a8.js": "5dde61c486215b0cef31af00252dc146b92f5e25",
     "/ngdemoapp/manifest.webmanifest": "67d784f7b6c3c44f7815489d67d18275f55f328c",
     "/ngdemoapp/polyfills-es2015.fc172460e3792d8fa8da.js": "65c537467564ee0ba776b629f71ed3413413a7cb",
     "/ngdemoapp/polyfills-es5.1efc2d54303a3f852823.js": "f1fb001939e2a054d62f941e8281f6051a71bf04",
