@@ -16,7 +16,7 @@
     <div class="col-sm-6 col-lg-4 col-xl-3" *ngFor="let randomUser of (randomUsers$ | async)">
 
       <div class="card mb-3">
-        <img src="https://via.placeholder.com/150/?text=Sample" class="card-img-top" [alt]="randomUser?.username">
+        <img src="assets/images/sample.png" class="card-img-top" [alt]="randomUser?.username">
         <div class="card-body">
           <h5 class="card-title">{{ randomUser?.name | titlecase }}</h5>
           <p class="card-text">
