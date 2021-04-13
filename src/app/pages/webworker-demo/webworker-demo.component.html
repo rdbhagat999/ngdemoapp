@@ -18,7 +18,7 @@
       <div class="card mb-3">
         <img src="assets/images/sample.png" width="500px" height="500px" class="card-img-top" [alt]="randomUser?.username">
         <div class="card-body">
-          <h3 class="card-title">{{ randomUser?.name | titlecase 3}</h3>
+          <h3 class="card-title">{{ randomUser?.name | titlecase }}</h3>
           <p class="card-text">
             {{ randomUser?.address?.city }} {{ randomUser?.address?.zipcode }}
           </p>
