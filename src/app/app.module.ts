@@ -18,6 +18,7 @@ import { ManageHttpInterceptor } from './interceptors/manage-http.interceptor';
 import { LazyImgDirective } from './directives/lazy-img.directive';
 import { AppShellRenderDirective } from './directives/app-shell-render.directive';
 import { AppShellNoRenderDirective } from './directives/app-shell-no-render.directive';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AppShellNoRenderDirective } from './directives/app-shell-no-render.dire
     LazyImgDirective,
     AppShellRenderDirective,
     AppShellNoRenderDirective,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
