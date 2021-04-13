@@ -32,7 +32,7 @@
       "updateMode": "prefetch",
       "resources": {
         "files": [
-          "/assets/**",
+          "/assets/**/*",
           "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
         ]
       }
@@ -47,7 +47,7 @@
       ],
       "cacheConfig": {
         "maxAge": "30d",
-        "maxSize": 15,
+        "maxSize": 5,
         "strategy": "freshness",
         "timeout": "6s"
       }

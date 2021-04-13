@@ -16,7 +16,7 @@
     <div class="col-sm-6 col-lg-4 col-xl-3" *ngFor="let randomUser of (randomUsers$ | async)">
 
       <div class="card mb-3">
-        <img src="assets/images/sample.png" width="500px" height="500px" class="card-img-top" [alt]="randomUser?.username">
+        <img src="assets/sample.png" width="500px" height="500px" class="card-img-top" [alt]="randomUser?.username">
         <div class="card-body">
           <h3 class="card-title">{{ randomUser?.name | titlecase }}</h3>
           <p class="card-text">
@@ -41,7 +41,7 @@
     <div class="col-sm-6 col-lg-4 col-xl-3" *ngFor="let post of (posts$ | async)">
 
       <div class="card mb-3">
-        <img src="https://via.placeholder.com/500/?text=Post" width="500px" height="500px" class="card-img-top" [alt]="post?.title">
+        <img src="ssets/post.png" width="500px" height="500px" class="card-img-top" [alt]="post?.title">
         <div class="card-body">
           <h3 class="card-title">{{ post?.title | titlecase }}</h3>
           <p class="card-text">
