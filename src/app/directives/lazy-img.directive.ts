@@ -1,7 +1,7 @@
 import { Directive, ElementRef } from '@angular/core';
 
 @Directive({
-  selector: 'img'
+  selector: '[appLazyImg]'
 })
 export class LazyImgDirective {
 
