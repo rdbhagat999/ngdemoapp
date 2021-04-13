@@ -171,6 +171,7 @@
           "options": {
             "browserTarget": "ngdemoapp:build:production",
             "serverTarget": "ngdemoapp:server:production",
+            "guessRoutes": true,
             "routes": [
               "/"
             ]

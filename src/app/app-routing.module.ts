@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   { path: 'lazy',
     loadChildren: () => import('./pages/lazy/lazy.module').then(m => m.LazyModule),
-    data: { preload: true, delay: true, time: 5000 },
+    data: { preload: false, delay: false, time: 5000 },
     canActivate: [AuthGuard]
   }
 ];

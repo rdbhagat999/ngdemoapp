@@ -16,6 +16,6 @@ export const routes: Routes = [
     FileUploadModule,
     RouterModule.forChild(routes)
   ],
-  exports: [LazyCompAComponent]
+  exports: [RouterModule]
 })
 export class LazyModule { }

@@ -17,33 +17,26 @@ import { ClipboardComponent } from './clipboard/clipboard.component';
 
 const routes: Route[] = [
   {
-    path: '',
-    children: [
-
-      {
-        path: 'regex', component: InputRegexValidationsComponent
-      },
-      {
-        path: 'skeleton', component: SkeletonLoaderComponent
-      },
-      {
-        path: 'sweetalert', component: SweetAlertComponent
-      },
-      {
-        path: 'pdf', component: ViewPdfComponent
-      },
-      {
-        path: 'qrcode', component: QrcodeComponent
-      },
-      {
-        path: 'clipboard', component: ClipboardComponent
-      },
-      {
-        path: '', redirectTo: '/regex', pathMatch: 'full'
-      },
-
-    ]
-  }
+    path: 'regex', component: InputRegexValidationsComponent
+  },
+  {
+    path: 'skeleton', component: SkeletonLoaderComponent
+  },
+  {
+    path: 'sweetalert', component: SweetAlertComponent
+  },
+  {
+    path: 'pdf', component: ViewPdfComponent
+  },
+  {
+    path: 'qrcode', component: QrcodeComponent
+  },
+  {
+    path: 'clipboard', component: ClipboardComponent
+  },
+  {
+    path: '', component: InputRegexValidationsComponent
+  },
 ]
 
 
@@ -66,6 +59,7 @@ const routes: Route[] = [
     ClipboardModule,
     NgxSkeletonLoaderModule,
     RouterModule.forChild(routes,)
-  ]
+  ],
+  exports: [RouterModule]
 })
 export class FeaturesModule { }
