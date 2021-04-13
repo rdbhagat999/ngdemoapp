@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MockDataService } from 'src/app/services/mock-data.service';
 
 @Component({
   selector: 'app-webworker-demo',
@@ -8,11 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class WebworkerDemoComponent implements OnInit {
 
   n = 99999999;
+  randomUsers$: any;
+  posts$: any;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private readonly mockService: MockDataService) {
+    this.randomUsers$ = this.mockService.getUsers(6);
+    this.posts$ = this.mockService.getPosts(6);
   }
+
+  ngOnInit(): void {}
 
   runWorker() {
 

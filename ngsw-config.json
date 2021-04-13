@@ -15,6 +15,9 @@
         ],
         "urls": [
           "https://fonts.gstatic.com",
+          "https://jsonplaceholder.typicode.com/users",
+          "https://jsonplaceholder.typicode.com/posts",
+          "https://via.placeholder.com/150/?text=Sample",
           "https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap",
           "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/fonts/*.woff2?v=4.7.0",
           "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/*.css",

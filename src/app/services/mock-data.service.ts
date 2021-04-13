@@ -1,8 +1,10 @@
-import { Injectable } from '@angular/core';
+import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Employee } from '../models/employee';
-import { Observable, throwError } from 'rxjs';
-import { retry, catchError } from 'rxjs/operators';
+import { Observable, of, throwError } from 'rxjs';
+import { retry, catchError, map, first, tap } from 'rxjs/operators';
+import { makeStateKey, TransferState } from '@angular/platform-browser';
+import { isPlatformServer } from '@angular/common';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +21,7 @@ export class MockDataService {
     })
   }
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private readonly transferState: TransferState, @Inject(PLATFORM_ID) private readonly platformId: string,) { }
 
   // Handle API errors
   handleError(error: HttpErrorResponse) {
@@ -37,6 +39,42 @@ export class MockDataService {
     return throwError(
       'Something bad happened; please try again later.');
   };
+
+  getUsers(num: number = 3) {
+
+    const randomusers_key = makeStateKey('randomusers');
+
+    if (this.transferState.hasKey(randomusers_key)) {
+
+      const users = this.transferState.get(randomusers_key, null);
+      this.transferState.remove(randomusers_key);
+      return of(users);
+
+    } else {
+
+      return this.http.get(`https://jsonplaceholder.typicode.com/users`)
+        .pipe(
+          first(),
+          tap((results: any) => {
+            if (isPlatformServer(this.platformId)) {
+              this.transferState.set(randomusers_key, results);
+            }
+          }),
+          catchError(this.handleError)
+        );
+      }
+
+  }
+
+  getPosts(num: number = 3) {
+
+    return this.http.get(`https://jsonplaceholder.typicode.com/users/1/posts`)
+      .pipe(
+        first(),
+        catchError(this.handleError)
+      );
+
+  }
 
 
   // Create a new item

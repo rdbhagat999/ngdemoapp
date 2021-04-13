@@ -5,3 +5,54 @@
   <button class="btn btn-dark mr-1 mb-1" (click)="runThread()">JavaScript Thread</button>
 </div>
 
+<div class="container" *ngIf="(randomUsers$ | async)?.length > 0">
+
+  <div class="row">
+
+    <div class="col-sm-12">
+      <h2>Featured Users [Fetched Server-side]</h2>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 col-xl-3" *ngFor="let randomUser of (randomUsers$ | async)">
+
+      <div class="card mb-3">
+        <img src="https://via.placeholder.com/150/?text=Sample" class="card-img-top" [alt]="randomUser?.username">
+        <div class="card-body">
+          <h5 class="card-title">{{ randomUser?.name | titlecase }}</h5>
+          <p class="card-text">
+            {{ randomUser?.address?.city }} {{ randomUser?.address?.zipcode }}
+          </p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <hr />
+
+  <div class="row">
+
+    <div class="col-sm-12">
+      <h2>New Posts [Fetched Client-side]</h2>
+    </div>
+
+    <div class="col-sm-6 col-lg-4 col-xl-3" *ngFor="let post of (posts$ | async)">
+
+      <div class="card mb-3">
+        <img src="https://via.placeholder.com/150/?text=Post" class="card-img-top" [alt]="post?.title">
+        <div class="card-body">
+          <h5 class="card-title">{{ post?.title | titlecase }}</h5>
+          <p class="card-text">
+            {{ post?.body }}
+          </p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
