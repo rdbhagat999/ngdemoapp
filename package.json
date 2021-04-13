@@ -15,6 +15,7 @@
     "dev:ssr": "ng run ngdemoapp:serve-ssr",
     "serve:ssr": "node dist/ngdemoapp/server/main.js",
     "build:ssr": "ng build --prod && ng run ngdemoapp:server:production",
+    "serve:prerender": "http-server ./dist/ngdemoapp/browser -c-1 -b -g -d",
     "prerender": "ng run ngdemoapp:prerender"
   },
   "private": true,
