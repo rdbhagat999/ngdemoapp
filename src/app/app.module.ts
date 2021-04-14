@@ -33,7 +33,7 @@ import { LoaderComponent } from './loader/loader.component';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    BrowserTransferStateModule,
+    // BrowserTransferStateModule,
     TransferHttpCacheModule,
     BrowserAnimationsModule,
     FormsModule,
