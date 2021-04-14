@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { environment } from '../environments/environment';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { TransferHttpCacheModule } from '@nguniversal/common';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -32,8 +33,9 @@ import { LoaderComponent } from './loader/loader.component';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    BrowserAnimationsModule,
     BrowserTransferStateModule,
+    TransferHttpCacheModule,
+    BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,

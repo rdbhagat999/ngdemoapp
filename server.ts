@@ -7,6 +7,8 @@ import { join } from 'path';
 import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
+const corsModule = require('cors');
+const compressionModule = require('compression');
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
@@ -31,6 +33,7 @@ export function app(): express.Express {
 
   // All regular routes use the Universal engine
   server.get('*', (req, res) => {
+    res.setHeader('X-Frame-Options', 'DENY');
     res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
   });
 
@@ -42,6 +45,9 @@ function run(): void {
 
   // Start up the Node server
   const server = app();
+  server.disable('x-powered-by');
+  server.use(corsModule());
+  server.use(compressionModule());
   server.listen(port, () => {
     console.log(`Node Express server listening on http://localhost:${port}`);
   });
