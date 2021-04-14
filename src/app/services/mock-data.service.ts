@@ -42,27 +42,33 @@ export class MockDataService {
 
   getUsers(num: number = 3) {
 
-    const randomusers_key = makeStateKey('randomusers');
+    // const randomusers_key = makeStateKey('randomusers');
 
-    if (this.transferState.hasKey(randomusers_key)) {
+    // if (this.transferState.hasKey(randomusers_key)) {
 
-      const users = this.transferState.get(randomusers_key, null);
-      this.transferState.remove(randomusers_key);
-      return of(users);
+    //   const users = this.transferState.get(randomusers_key, null);
+    //   this.transferState.remove(randomusers_key);
+    //   return of(users);
 
-    } else {
+    // } else {
 
-      return this.http.get(`https://jsonplaceholder.typicode.com/users`)
-        .pipe(
-          first(),
-          tap((results: any) => {
-            if (isPlatformServer(this.platformId)) {
-              this.transferState.set(randomusers_key, results);
-            }
-          }),
-          catchError(this.handleError)
-        );
-      }
+    //   return this.http.get(`https://jsonplaceholder.typicode.com/users`)
+    //     .pipe(
+    //       first(),
+    //       tap((results: any) => {
+    //         if (isPlatformServer(this.platformId)) {
+    //           this.transferState.set(randomusers_key, results);
+    //         }
+    //       }),
+    //       catchError(this.handleError)
+    //     );
+    // }
+
+    return this.http.get(`https://jsonplaceholder.typicode.com/users`)
+      .pipe(
+        first(),
+        catchError(this.handleError)
+      );
 
   }
 
