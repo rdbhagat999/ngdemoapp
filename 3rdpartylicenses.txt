@@ -44,6 +44,9 @@ MIT
 @angular/service-worker
 MIT
 
+@nguniversal/common
+MIT
+
 angular2-qrcode
 MIT
 
