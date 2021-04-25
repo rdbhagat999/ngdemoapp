@@ -1,22 +1,32 @@
 import { DOCUMENT } from '@angular/common';
-import { Directive, ElementRef, EventEmitter, Inject, NgZone, Output } from '@angular/core';
+import { Directive, ElementRef, EventEmitter, Inject, NgZone, OnDestroy, OnInit, Output } from '@angular/core';
 import { environment } from 'src/environments/environment';
+
+declare global {
+  interface Window {
+    recaptchaCallback: () => void;
+    grecaptcha: {
+      render: (...args: any[]) => number;
+      ready: (fn: Function) => void;
+    };
+  }
+}
 
 @Directive({
   selector: '[appRecaptcha]'
 })
-export class RecaptchaDirective {
+export class RecaptchaDirective implements OnInit, OnDestroy {
 
   @Output() recaptchaSuccess = new EventEmitter<string>();
   @Output() recaptchaExpired = new EventEmitter<unknown>();
   @Output() recaptchaError = new EventEmitter<unknown>();
 
-  private readonly scriptId = 'volt-recaptcha';
-  widgetId: number;
+  private readonly scriptId = 'recaptcha-script';
+  private widgetId: number;
 
   constructor(
-    private elementRef: ElementRef,
-    private ngZone: NgZone,
+    private readonly elementRef: ElementRef,
+    private readonly ngZone: NgZone,
     @Inject(DOCUMENT) private readonly dom: Document,
   ) {}
 
@@ -30,24 +40,33 @@ export class RecaptchaDirective {
   }
 
   private registerCaptchaCallback() {
-    (window as any).recaptchaCallback = () => {
+    window.recaptchaCallback = () => {
       const config = {
-        sitekey: environment.recaptchaSitekey,
-        callback: this.onSuccessCallback.bind(this),
+        'sitekey': environment.recaptchaSitekey,
+        'size': 'invisible',
+        'callback': this.onSuccessCallback.bind(this),
         'error-callback': this.onErrorCallback.bind(this),
         'expired-callback': this.onExpiredCallback.bind(this),
       };
-      this.widgetId = this.renderCaptcha(config);
+      this.renderCaptcha(config);
     };
+  }
+
+  private renderCaptcha(config: any) {
+
+    window?.grecaptcha?.ready(() => {
+      this.widgetId = window?.grecaptcha?.render(this.elementRef?.nativeElement, config);
+    });
+
+    // return window?.grecaptcha?.render(this.elementRef?.nativeElement, config);
   }
 
   private addScript() {
     if (this.dom.getElementById(this.scriptId) != null) {
       return;
     }
-
     const script = this.dom.createElement('script');
-    script.src = 'https://www.google.com/recaptcha/api.js?onload=recaptchaCallback&render=explicit';
+    script.src = environment?.recaptchaURL;
     script.id = this.scriptId;
     script.async = true;
     script.defer = true;
@@ -70,10 +89,6 @@ export class RecaptchaDirective {
     this.ngZone.run(() => {
       this.recaptchaExpired.emit();
     });
-  }
-
-  private renderCaptcha(config: any): number {
-    return (window as any).grecaptcha.render(this.elementRef.nativeElement, config);
   }
 
 }
