@@ -44,4 +44,8 @@
         <router-outlet></router-outlet>
     </div>
 
+    <div class="text-center my-3" appRecaptcha (recaptchaSuccess)="onRecaptchaSuccess($event)"></div>
+
+    <div class="text-center">{{ name }}</div>
+
 </main>

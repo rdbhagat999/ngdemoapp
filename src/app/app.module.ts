@@ -16,6 +16,7 @@ import { AuthGuard } from './guards/auth.guard';
 import { HttpcancelService } from './services/httpcancel.service';
 import { ManageHttpInterceptor } from './interceptors/manage-http.interceptor';
 import { LazyImgDirective } from './directives/lazy-img.directive';
+import { RecaptchaDirective } from './directives/recaptcha.directive';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { LazyImgDirective } from './directives/lazy-img.directive';
     WebworkerDemoComponent,
     InputFocusDirective,
     LazyImgDirective,
+    RecaptchaDirective,
   ],
   imports: [
     BrowserModule,

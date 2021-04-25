@@ -1,5 +1,5 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Component } from '@angular/core';
+import { Component, VERSION } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -27,10 +27,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  name = 'Angular ' + VERSION.full;
   isCollapsed = true;
+  token: string;
 
   constructor() {
     this.isCollapsed = true;
+  }
+
+  onRecaptchaSuccess(token: string) {
+    this.token = token;
   }
 
   toggleNavbar() {
