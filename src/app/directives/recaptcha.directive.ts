@@ -54,11 +54,18 @@ export class RecaptchaDirective implements OnInit, OnDestroy {
 
   private renderCaptcha(config: any) {
 
-    // window?.grecaptcha?.ready(() => {
-    //   this.widgetId = window?.grecaptcha?.render(this.elementRef?.nativeElement, config);
-    // });
+    try {
 
-    this.widgetId = window?.grecaptcha?.render(this.elementRef?.nativeElement, config);
+      window?.grecaptcha?.ready(() => {
+        this.widgetId = window?.grecaptcha?.render(this.elementRef?.nativeElement, config);
+      });
+
+      // this.widgetId = window?.grecaptcha?.render(this.elementRef?.nativeElement, config);
+
+    } catch (error) {
+      // console.log(error?.message);
+
+    }
   }
 
   private addScript() {
