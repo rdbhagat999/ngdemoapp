@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1619322390899,
+  "timestamp": 1619322569988,
   "index": "/ngdemoapp/index.html",
   "assetGroups": [
     {
@@ -16,7 +16,7 @@
         "/ngdemoapp/5.2e00692b1664e2a7d047.js",
         "/ngdemoapp/favicon.ico",
         "/ngdemoapp/index.html",
-        "/ngdemoapp/main.3046065cb76c47cbc64a.js",
+        "/ngdemoapp/main.d83bb826f7c5141cce41.js",
         "/ngdemoapp/manifest.webmanifest",
         "/ngdemoapp/polyfills.316f81663be7392c65f5.js",
         "/ngdemoapp/runtime.f6300ac5c6625b3861dd.js",
@@ -83,8 +83,8 @@
     "/ngdemoapp/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/ngdemoapp/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/ngdemoapp/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/ngdemoapp/index.html": "4ead180763d50d74876c031943df804bbbf2eadf",
-    "/ngdemoapp/main.3046065cb76c47cbc64a.js": "103fec2523d502a5ff8b78b802e60736364ba77d",
+    "/ngdemoapp/index.html": "8add143442cf326d1c00fb05b06825b40457c34c",
+    "/ngdemoapp/main.d83bb826f7c5141cce41.js": "9a1afdf760e4a61bc59cab4253412dec75e07c34",
     "/ngdemoapp/manifest.webmanifest": "67d784f7b6c3c44f7815489d67d18275f55f328c",
     "/ngdemoapp/polyfills.316f81663be7392c65f5.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
     "/ngdemoapp/runtime.f6300ac5c6625b3861dd.js": "de311dc1432c41fc725672d3bfe400441caa0227",
