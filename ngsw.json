@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1620471827408,
+  "timestamp": 1620472255761,
   "index": "/ngdemoapp/index.html",
   "assetGroups": [
     {
@@ -16,11 +16,11 @@
         "/ngdemoapp/5.2e00692b1664e2a7d047.js",
         "/ngdemoapp/favicon.ico",
         "/ngdemoapp/index.html",
-        "/ngdemoapp/main.072123078d4671de6e44.js",
+        "/ngdemoapp/main.6f7bf193d42de7ca1b85.js",
         "/ngdemoapp/manifest.webmanifest",
         "/ngdemoapp/polyfills.316f81663be7392c65f5.js",
         "/ngdemoapp/runtime.f6300ac5c6625b3861dd.js",
-        "/ngdemoapp/styles.03fdc604e8a87d8c66a9.css"
+        "/ngdemoapp/styles.f7e9ec78823f5998af38.css"
       ],
       "patterns": [
         "https:\\/\\/fonts\\.gstatic\\.com",
@@ -47,7 +47,8 @@
         "/ngdemoapp/assets/icons/icon-384x384.png",
         "/ngdemoapp/assets/icons/icon-512x512.png",
         "/ngdemoapp/assets/icons/icon-72x72.png",
-        "/ngdemoapp/assets/icons/icon-96x96.png"
+        "/ngdemoapp/assets/icons/icon-96x96.png",
+        "/ngdemoapp/assets/images/mainBcg.jpeg"
       ],
       "patterns": []
     }
@@ -82,13 +83,14 @@
     "/ngdemoapp/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "/ngdemoapp/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/ngdemoapp/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/ngdemoapp/assets/images/mainBcg.jpeg": "9bd3699d577c0476f4676c08c3c555f71976939d",
     "/ngdemoapp/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/ngdemoapp/index.html": "60c6236cab73302e4b0eb5e3847f8fc957d68764",
-    "/ngdemoapp/main.072123078d4671de6e44.js": "73641f6568ad1663aeee76c2372e68ede4a9ff35",
+    "/ngdemoapp/index.html": "3cb558d4e33017810469f62ffc849ee6beb12194",
+    "/ngdemoapp/main.6f7bf193d42de7ca1b85.js": "86b6030a27304638c6e4b31284ca4b0ea706e4a0",
     "/ngdemoapp/manifest.webmanifest": "67d784f7b6c3c44f7815489d67d18275f55f328c",
     "/ngdemoapp/polyfills.316f81663be7392c65f5.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
     "/ngdemoapp/runtime.f6300ac5c6625b3861dd.js": "de311dc1432c41fc725672d3bfe400441caa0227",
-    "/ngdemoapp/styles.03fdc604e8a87d8c66a9.css": "d3e6643609e304f176398816466a1e27080b76ff"
+    "/ngdemoapp/styles.f7e9ec78823f5998af38.css": "fd796777fd754dc2ddb9d293e1de8d2323104fdb"
   },
   "navigationUrls": [
     {
