@@ -38,14 +38,15 @@
     </div>
 </nav>
 
-<main role="main" class="container">
+<main role="main" class="container-fluid px-0">
 
     <div class="text-center">
+
+      <div class="text-center my-2">{{ name }}</div>
+
         <router-outlet></router-outlet>
     </div>
 
     <div class="text-center my-3" appRecaptcha (recaptchaSuccess)="onRecaptchaSuccess($event)"></div>
-
-    <div class="text-center">{{ name }}</div>
 
 </main>

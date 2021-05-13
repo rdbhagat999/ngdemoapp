@@ -20,7 +20,7 @@ export class WebworkerDemoComponent implements OnInit {
 
       const startTime = new Date().getTime();
 
-      const numListWorker = new Worker('./num-list.worker', {
+      const numListWorker = new Worker(new URL('./num-list.worker', import.meta.url), {
         type: 'module'
       });
       numListWorker.onmessage = ({ data }) => {
